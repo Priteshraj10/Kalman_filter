@@ -2,8 +2,8 @@
     File name         : detectors.py
     File Description  : Detect objects in video frame
     Author            : Pritesh Raj
-    Date created      : 25-12-2020
-    Date last modified: 25-12-2020
+    Date created      : 10-11-2020
+    Date last modified: 9-12-2020
     Python Version    : 3.7
 '''
 

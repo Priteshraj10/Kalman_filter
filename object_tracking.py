@@ -1,4 +1,11 @@
-
+'''
+    File name         : object_tracking.py
+    File Description  : Kalman Filter Algorithm Implementation
+    Author            : Pritesh Raj
+    Date created      : 3-12-2020
+    Date last modified: 20-12-2020
+    Python Version    : 3.7
+'''
 # Import python libraries
 import cv2
 import copy
