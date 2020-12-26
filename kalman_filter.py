@@ -12,7 +12,8 @@ import numpy as np
 
 
 class KalmanFilter(object):
-    """Kalman Filter class keeps track of the estimated state of
+    """
+    Kalman Filter class keeps track of the estimated state of
     the system and the variance or uncertainty of the estimate.
     Predict and Correct methods implement the functionality
     Reference: https://en.wikipedia.org/wiki/Kalman_filter
@@ -42,7 +43,8 @@ class KalmanFilter(object):
         self.lastResult = np.array([[0], [255]])
 
     def predict(self):
-        """Predict state vector u and variance of uncertainty P (covariance).
+        """
+        Predict state vector u and variance of uncertainty P (covariance).
             where,
             u: previous state vector
             P: previous covariance matrix
@@ -66,7 +68,8 @@ class KalmanFilter(object):
         return self.u
 
     def correct(self, b, flag):
-        """Correct or update state vector u and variance of uncertainty P (covariance).
+        """
+        Correct or update state vector u and variance of uncertainty P (covariance).
         where,
         u: predicted state vector u
         A: matrix in observation equations

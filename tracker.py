@@ -11,7 +11,6 @@
 # Import python libraries
 import numpy as np
 from kalman_filter import KalmanFilter
-from common import dprint
 from scipy.optimize import linear_sum_assignment
 
 
@@ -92,7 +91,7 @@ class Tracker(object):
                     del self.tracks[id]
                     del assignment[id]
                 else:
-                    dprint("ERROR: id is greater than length of tracks")
+                    print("ERROR: id is greater than length of tracks")
 
         # Now look for un_assigned detects
         un_assigned_detects = []

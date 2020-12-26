@@ -29,7 +29,7 @@ skip_frame_count = 0
 pause = False
 
 # Infinite loop to process video frames
-while(True):
+while True :
     # Capture frame-by-frame
     ret, frame = cap.read()
 
