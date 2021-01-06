@@ -66,9 +66,7 @@ class Detectors(object):
         ret, thresh = cv2.threshold(edges, 127, 255, 0)
 
         # Find contours
-        _, contours, hierarchy = cv2.findContours(thresh,
-                                                  cv2.RETR_EXTERNAL,
-                                                  cv2.CHAIN_APPROX_SIMPLE)
+        contours,hierachy=cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
 
         if (debug == 0):
             cv2.imshow('thresh', thresh)
