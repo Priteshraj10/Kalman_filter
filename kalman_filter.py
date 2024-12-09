@@ -3,8 +3,8 @@
     File Description  : Kalman Filter Algorithm Implementation
     Author            : Pritesh Raj
     Date created      : 19-11-2020
-    Date last modified: 15-12-2020
-    Python Version    : 3.7
+    Date last modified: 9-12-2020
+    Python Version    : 3.11
 '''
 
 # Import python libraries
@@ -87,9 +87,11 @@ class KalmanFilter(object):
                 C.Inv is C inverse
         Args:
             b: vector of observations
+            c: vector of the C Inverse vector
             flag: if "true" prediction result will be updated else detection
         Return:
             predicted state vector u
+            the predicted value of the C inverse 
         """
 
         if not flag:  # update using prediction
